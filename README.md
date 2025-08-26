@@ -1,2 +1,2 @@
 # Coding Demos
-Repository for the coding demos for CSE 478 F2024
+Repository for the coding demos for CSE 478 F2025
