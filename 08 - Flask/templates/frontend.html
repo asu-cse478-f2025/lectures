@@ -63,18 +63,16 @@
             displayUpdated();
         });
 
-        // When any of the checkboxes are clicked, or the number 
-        // in #clusters-ipnut changes, call displayUpdated().
+        // When any of the checkboxes are clicked
         d3.selectAll('input[type=checkbox').on('click', displayUpdated);
-        d3.selectAll('#clusters-input').on('change', displayUpdated);
+        
 
         /*
             This function is called 
                 (1) at page load time
                 (2) when a checkbox is clicked, 
-                (3) when the cluster number changes
             and does the following:
-                > Read current values for the checkboxes and cluster number
+                > Read current values for the checkboxes
                 > make a fetch call (POST request) to the server with those values
                 > receive the response back:
                 > call drawtSNE() to update the scatterplot
